@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="blinkText">Hello, I am blinking!</div>
+    <head>
+        <title>Blink Text</title>
+    </head>
+
+    <script>
+            function blinkText() {
+                var text = document.getElementById("blinkText");
+                setInterval(function() {
+                    text.style.visibility = (text.style.visibility === 'hidden') ? 'visibility' : 'hidden';
+                }, 500); // Toggle visibility every 500 milliseconds (0.5 seconds)
+            }
+            blinkText(); // Start blinking the text
+    </script>
+</body>
+</html>
